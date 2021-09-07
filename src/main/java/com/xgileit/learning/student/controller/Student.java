@@ -6,9 +6,9 @@ package com.xgileit.learning.student.controller;
 public class Student {
 
     int studentId;
-    String firstName;
-    String lastName;
-    String address;
+    private String firstName;
+    private String lastName;
+    private String address;
 
     //parameterized constructor
     public Student(int studentId, String firstName, String lastName, String address) {
@@ -57,7 +57,6 @@ public class Student {
     }
 
     //override the toString method
-    @Override
     public String toString() {
         return "First name = " + firstName + "\n"
                 + "Last name = " + lastName + "\n"
