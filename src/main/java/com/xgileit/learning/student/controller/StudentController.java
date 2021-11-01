@@ -1,6 +1,6 @@
 package com.xgileit.learning.student.controller;
 
-import com.xgileit.learning.student.service.StudentManagementServiceImpl;
+import com.xgileit.learning.student.service.StudentManagementServiceImplementation;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ import java.util.List;
 public class StudentController {
 
     ArrayList<String> studentList = new ArrayList<>();
-    StudentManagementServiceImpl studentManagementService = new StudentManagementServiceImpl();
+    StudentManagementServiceImplementation studentManagementService = new StudentManagementServiceImplementation();
 
     @GetMapping
     public String studentSelect() {

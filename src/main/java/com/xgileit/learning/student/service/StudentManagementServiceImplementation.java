@@ -1,16 +1,20 @@
 package com.xgileit.learning.student.service;
 
+import com.xgileit.learning.student.controller.AttendanceDTO;
 import com.xgileit.learning.student.controller.Student;
 import com.xgileit.learning.student.exceptions.StudentNotFoundException;
 
+
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
  * This class provides implementation for the student management service to perform CRUD operation on student
  */
 
-public class StudentManagementServiceImpl implements StudentManagementService {
+
+public class StudentManagementServiceImplementation implements StudentManagementService {
 
 
     Map<Integer, Student> studentMap = new HashMap<>();
@@ -54,5 +58,9 @@ public class StudentManagementServiceImpl implements StudentManagementService {
         return "student deleted";
     }
 
+    @Override
+    public List<AttendanceDTO> findByStudentId(AttendanceDTO attendanceDTO) {
 
+        return null;
+    }
 }
